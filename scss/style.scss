@@ -75,6 +75,7 @@ a{
 .headings{
     padding: $padding;
     @include flex(space-between,center ,row );
+    
     article:first-child{
         flex: 2;
         @media (max-width: 767px){
@@ -92,6 +93,13 @@ a{
         flex: 10;
         @media (max-width: 767px){
             flex: 0 0 100%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -50px;
+        }
+        @media (max-width: 1023px){
+            margin-left: 50px;
         }
         h3{
             text-transform: uppercase;
@@ -183,6 +191,11 @@ HEADER
         padding: 30px;
         @include flex(space-between,flex-start,column);   
     }
+    @media (max-width: 1023px){
+        text-align: left;
+        padding: 30px;
+        @include flex(space-between,flex-start,column); 
+    }
     h1{
         font-size: 4rem;
         line-height: 1.2;
@@ -201,7 +214,9 @@ HEADER
     p{
         color: $pink;
         font-size: 1.3rem;
-        
+        @media (max-width: 1023px){
+            color: $black;
+        }
     }
     
     
@@ -243,10 +258,13 @@ About
             color: $white;
             font-size: 2.5rem;
             @media (max-width: 767px){
-                font-size: 2rem;
-                
+                font-size: 2rem;  
+            }
+            @media (max-width: 1023px){
+                font-size: 1.8rem;
             }
         }
+        
         
     }
 
@@ -326,6 +344,43 @@ BLACK HEADING
                 width: 80px;
                 margin: 30px auto 30px auto;
             }
+        }
+    }
+}
+/*********************
+TEAM
+*********************/
+.team{
+    padding-bottom: 100px;
+    text-align: center;
+    @include flex(space-between,center ,row );
+    article{
+        flex: 0 0 30%;
+        @media (max-width: 767px){
+            flex: 0 0 100%;
+        }
+        img{
+            width: 100%;
+            display: block;
+            border-radius: 50%;
+            opacity: .8;
+            transition: $transition;
+            border: 15px solid $lightgray;
+            @media (max-width: 767px){
+                margin-top: 20px;
+                
+            }
+            &:hover{
+                transform: scale(1.1);
+                opacity: 1;
+                border: 15px solid $pink;
+            }
+
+        }
+        h4{
+            color: $pink;
+            font-size: 1.3rem;
+            padding: 20px 0;
         }
     }
 }
