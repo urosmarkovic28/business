@@ -9,13 +9,11 @@
             </div>
             <div class="col">
             <i class="fas fa-envelope"></i>
-                <p>Main street 2, Novi Sad</p>
-                <p>Serbia</p>
+                <p>urosmarkovic2906@gmail.com</p>
             </div>
             <div class="col">
             <i class="fas fa-phone"></i>
-                <p>Main street 2, Novi Sad</p>
-                <p>Serbia</p>
+                <p>0628730328</p>
             </div>
         </div>
     </footer>

@@ -29,5 +29,16 @@
             
         </article>
     </section>
+    <!--Headings-->
+    <section class="container headings">
+        <article>
+            <h2>02</h2>
+        </article>
+        <article>
+            <h3>Services</h3>
+            <h2><span>How to provide</span> tools that help anyone</h2>
+            <h4>Get your Business in 4 easy steps</h4>
+        </article>
+    </section>
     
 <?php include "partials/footer.php"?>
