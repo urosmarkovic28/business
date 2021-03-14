@@ -264,7 +264,7 @@ nav ul li:nth-child(6) a:hover {
 /*********************
 HEADER
 *********************/
-header {
+.mainHeader {
   background-image: url(../img/header.jpg);
   height: 80vh;
   background-position: center right;
@@ -289,7 +289,7 @@ header {
 }
 
 @media (max-width: 767px) {
-  header {
+  .mainHeader {
     text-align: left;
     padding: 30px;
     display: -webkit-box;
@@ -310,35 +310,35 @@ header {
   }
 }
 
-header h1 {
+.mainHeader h1 {
   font-size: 4rem;
   line-height: 1.2;
 }
 
 @media (max-width: 767px) {
-  header h1 {
+  .mainHeader h1 {
     font-size: 2.5rem;
   }
 }
 
-header h3 {
+.mainHeader h3 {
   font-size: 3rem;
   color: #ef1f52;
   padding: 20px 0;
 }
 
 @media (max-width: 767px) {
-  header h3 {
+  .mainHeader h3 {
     font-size: 2rem;
   }
 }
 
-header p {
+.mainHeader p {
   color: #ef1f52;
   font-size: 1.3rem;
 }
 
-header button {
+.mainHeader button {
   padding: 15px 40px;
   background: #ef1f52;
   border: none;
@@ -349,7 +349,7 @@ header button {
   cursor: pointer;
 }
 
-header button:hover {
+.mainHeader button:hover {
   background: #1f1f1f;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -518,6 +518,94 @@ SERVICES
 
 .services article hr {
   margin: 20px 0;
+}
+
+/*********************
+BLACK HEADING
+*********************/
+.business {
+  background: #1f1f1f;
+}
+
+.business button {
+  padding: 15px 40px;
+  background: #ef1f52;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.business button:hover {
+  background: #1f1f1f;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.business h3 {
+  color: #fff;
+}
+
+.business h2 {
+  color: #fff;
+}
+
+.business h4 {
+  color: #fff;
+}
+
+.business .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.business .counter .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 767px) {
+  .business .counter .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.business .counter .col h2 {
+  color: #ef1f52;
+  font-size: 4rem;
+}
+
+.business .counter .col h4 {
+  color: #ef1f52;
+  font-size: 2rem;
+}
+
+.business .counter .col hr {
+  border: none;
+  height: 2px;
+  background: #fff;
+  width: 80px;
+  margin: 30px auto 30px auto;
 }
 
 /*********************

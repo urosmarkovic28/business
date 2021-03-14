@@ -170,7 +170,7 @@ nav{
 /*********************
 HEADER
 *********************/
-header{
+.mainHeader{
     background-image: url(../img/header.jpg);
     height: 80vh;
     background-position: center right;
@@ -250,7 +250,8 @@ About
         
     }
 
-}/*********************
+}
+/*********************
 SERVICES
 *********************/
 .services{
@@ -280,6 +281,51 @@ SERVICES
         }
         hr{
             margin: 20px 0;
+        }
+    }
+}
+/*********************
+BLACK HEADING
+*********************/
+.business{
+    background: $black;
+    button{
+        @include btn();
+    }
+    h3{
+        color: $white;
+    }
+    h2{
+        color: $white;
+    }
+    h4{
+        color: $white;
+    }
+    .counter{
+        @include flex(space-between,center ,row );
+        padding: $padding;
+        text-align: center;
+        .col{
+            flex: 1;
+            @media (max-width: 767px){
+                flex: 0 0 100%;
+            }
+            h2{
+                color: $pink;
+                font-size: 4rem;
+            }
+            h4{
+                color: $pink;
+                font-size: 2rem;
+               
+            }
+            hr{
+                border: none;
+                height: 2px;
+                background: $white;
+                width: 80px;
+                margin: 30px auto 30px auto;
+            }
         }
     }
 }

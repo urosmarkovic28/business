@@ -1,7 +1,7 @@
 <?php include "partials/header.php"?>
     
     <!--Header-->
-    <header>
+    <header class="mainHeader">
         <h1>Trusted and <br> professionals advisers</h1>
         <h3>For your buisness</h3>
         <p>Showcase your Profile to the world using online CV builder and Get Hired Faster</p>
@@ -85,5 +85,37 @@
             
         </article>
     </section>
+    <!--business-->
+    <section class="business">
+        <header class="container headings black">
+            <article>
+                <h2>03</h2>
+            </article>
+            <article>
+                <h3>What we done</h3>
+                <h2><span>Create</span> personalised business</h2>
+                <h4>Get your Business in 4 easy steps</h4>
+                <button>About us</button>
+            </article>
+        </header>
+        <div class="counter container">
+            <div class="col">
+                <h2>18</h2>
+                <h4>Nominations</h4>
+                <hr>
+            </div>
+            <div class="col">
+                <h2>5</h2>
+                <h4>Awards</h4>
+                <hr>
+            </div>
+            <div class="col">
+                <h2>45</h2>
+                <h4>Agencies</h4>
+                <hr>
+            </div>
+        </div>
+    </section>
+    
     
 <?php include "partials/footer.php"?>
