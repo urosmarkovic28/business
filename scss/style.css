@@ -46,8 +46,89 @@ a:hover {
 
 @media (max-width: 767px) {
   .container {
-    width: 95%;
+    width: 90%;
   }
+}
+
+.headings {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.headings article:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+@media (max-width: 767px) {
+  .headings article:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.headings article:first-child h2 {
+  font-size: 10rem;
+  color: #cccac5;
+}
+
+@media (max-width: 767px) {
+  .headings article:first-child h2 {
+    font-size: 7rem;
+  }
+}
+
+.headings article:last-child {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+@media (max-width: 767px) {
+  .headings article:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.headings article:last-child h3 {
+  text-transform: uppercase;
+}
+
+.headings article:last-child h2 {
+  font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  .headings article:last-child h2 {
+    font-size: 2rem;
+  }
+}
+
+.headings article:last-child h2 span {
+  color: #ef1f52;
+}
+
+.headings article:last-child h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /*********************

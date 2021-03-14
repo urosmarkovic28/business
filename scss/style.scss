@@ -69,7 +69,47 @@ a{
     width: 80%;
     margin: auto;
     @media (max-width: 767px){
-        width: 95%;
+        width: 90%;
+    }
+}
+.headings{
+    padding: $padding;
+    @include flex(space-between,center ,row );
+    article:first-child{
+        flex: 2;
+        @media (max-width: 767px){
+            flex: 0 0 100%;
+        }
+        h2{
+            font-size: 10rem;
+            color: $lightgray;
+            @media (max-width: 767px){
+                font-size: 7rem;
+            }
+        }
+    }
+    article:last-child{
+        flex: 10;
+        @media (max-width: 767px){
+            flex: 0 0 100%;
+        }
+        h3{
+            text-transform: uppercase;
+
+        }
+        h2{
+            font-size: 3rem;
+            @media (max-width: 767px){
+                font-size: 2rem;
+            }
+            span{
+                color: $pink;
+            }
+        }
+        h4{
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
     }
 }
 /*********************
