@@ -250,6 +250,38 @@ About
         
     }
 
+}/*********************
+SERVICES
+*********************/
+.services{
+    padding: $padding;
+    @include flex(space-between,center,row);
+    article{
+        flex: 0 0 30%;
+        border: 1px solid $black;
+        margin-bottom: 50px;
+        padding: 20px;
+        transition: $transition;
+        @media (max-width: 767px){
+            flex: 0 0 100%;
+        }
+        &:hover{
+            box-shadow: 0 0 20px $boxShadow;
+            transform: scale(1.1);
+            transition: $transition;
+        }
+        i{
+            color: $pink;
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 1.7rem;
+        }
+        hr{
+            margin: 20px 0;
+        }
+    }
 }
 /*********************
 FOOTER

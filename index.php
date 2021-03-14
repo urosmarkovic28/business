@@ -40,5 +40,50 @@
             <h4>Get your Business in 4 easy steps</h4>
         </article>
     </section>
+    <!-- Services -->
+    <section class="services container">
+        <article>
+            <i class="far fa-chart-bar"></i>
+            <h3>Marketing</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa, ex quia commodi magni unde possimus quibusdam dolor, maiores exercitationem voluptates provident illo placeat sint inventore fuga? Illum, quia odio!</p>
+
+        </article>
+        <article>
+            <i class="fas fa-bullseye"></i>
+            <h3>Marketing</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa, ex quia commodi magni unde possimus quibusdam dolor, maiores exercitationem voluptates provident illo placeat sint inventore fuga? Illum, quia odio!</p>
+            
+        </article>
+        <article>
+            <i class="fas fa-map-signs"></i>
+            <h3>Marketing</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa, ex quia commodi magni unde possimus quibusdam dolor, maiores exercitationem voluptates provident illo placeat sint inventore fuga? Illum, quia odio!</p>
+            
+        </article>
+        <article>
+            <i class="fas fa-filter"></i>
+            <h3>Marketing</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa, ex quia commodi magni unde possimus quibusdam dolor, maiores exercitationem voluptates provident illo placeat sint inventore fuga? Illum, quia odio!</p>
+            
+        </article>
+        <article>
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Marketing</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa, ex quia commodi magni unde possimus quibusdam dolor, maiores exercitationem voluptates provident illo placeat sint inventore fuga? Illum, quia odio!</p>
+            
+        </article>
+        <article>
+            <i class="fas fa-bullhorn"></i>
+            <h3>Marketing</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsa, ex quia commodi magni unde possimus quibusdam dolor, maiores exercitationem voluptates provident illo placeat sint inventore fuga? Illum, quia odio!</p>
+            
+        </article>
+    </section>
     
 <?php include "partials/footer.php"?>
