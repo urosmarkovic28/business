@@ -1,0 +1,101 @@
+/*********************
+variables
+*********************/
+$fontFamily: 'Raleway', sans-serif;
+$font: 16px;
+$black: #1f1f1f;
+$pink: #ef1f52;
+$gray: gray;
+$lightgray: #cccac5;
+$boxShadow: #cccac5;
+$white: #fff;
+$transition: .3s ease;
+$padding: 50px 0;
+
+/*********************
+mixins
+*********************/
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+/*********************
+basic styles
+*********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $fontFamily;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $black;
+
+    &:hover{
+        color: $white;
+        transition: $transition;
+    }
+}
+/*********************
+nav
+*********************/
+nav{
+    @include flex(space-between,center,row);
+    background: linear-gradient(to right, $pink, $lightgray);
+    padding: 20px 50px;
+    .logo{
+        font-size: 1.8rem;
+        line-height: 25px;
+        font-weight: 700;
+        span{
+            font-size: 1rem;
+            color: $white;
+            font-weight: 600;
+        }
+    }
+    ul{
+        @include flex(space-between,center ,row );
+        li{
+            margin: 0 20px;
+            text-transform: uppercase;
+            &:nth-child(5){
+                background: $pink;
+                padding: 10px 20px;
+                a{
+                    color: $white;
+                    &:hover{
+                        color: $lightgray;
+                        transition: $transition;
+                    }
+                }
+            }
+            &:nth-child(6){
+                background: $black;
+                padding: 10px 15px;
+                a{
+                    color: $white;
+                    &:hover{
+                        color: $lightgray;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+       
+    }
+}
