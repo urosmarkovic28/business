@@ -210,6 +210,48 @@ header{
     }
 }
 /*********************
+About
+*********************/
+.about{
+    @include flex(space-between, center,row );
+    //background: $black;
+    article:first-child{
+        flex: 1;
+        height: 400px;
+        @media (max-width: 767px){
+            flex: 0 0 100%;
+        }
+        img{
+            width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    article:last-child{
+        flex: 1;
+        padding: 0 40px;
+        background: $black;
+        height: 400px;
+        color: $white;
+        @include flex(center,flex-start ,column );
+        @media (max-width: 767px){
+            @include flex(center,flex-start ,column );
+            padding: 20px;
+        }
+        h2{
+            color: $white;
+            font-size: 2.5rem;
+            @media (max-width: 767px){
+                font-size: 2rem;
+                
+            }
+        }
+        
+    }
+
+}
+/*********************
 FOOTER
 *********************/
 footer{

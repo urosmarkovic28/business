@@ -18,5 +18,16 @@
             <h4>Get your Business in 4 easy steps</h4>
         </article>
     </section>
+    <!-- ABOUT -->
+    <section class="about">
+        <article>
+            <img src="img/about.jpg" alt="">
+        </article>
+        <article>
+            <h2>Everything you need in one solution</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur at omnis, nihil accusamus aperiam non dolore quasi sapiente nostrum laborum ipsum distinctio iste odit consectetur, itaque repudiandae, ex similique dignissimos dicta libero qui dolorem rem illo. Facilis, quam, maiores blanditiis architecto deleniti a quibusdam aspernatur, ut ullam doloremque reprehenderit.</p>
+            
+        </article>
+    </section>
     
 <?php include "partials/footer.php"?>
