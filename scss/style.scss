@@ -151,6 +151,7 @@ nav{
             text-transform: uppercase;
             &:nth-child(5){
                 background: $pink;
+                border-radius: 40px;
                 padding: 10px 20px;
                 a{
                     color: $white;
@@ -163,6 +164,7 @@ nav{
             &:nth-child(6){
                 background: $black;
                 padding: 10px 15px;
+                border-radius: 40px;
                 a{
                     color: $white;
                     &:hover{
